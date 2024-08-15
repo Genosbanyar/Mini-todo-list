@@ -52,7 +52,18 @@ body {
 }
 
 .parent-Div {
-  margin-top: 12px;
+  margin-top: 15px;
   cursor: pointer;
   user-select: none;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 25px;
+}
+
+.doneTask {
+  text-decoration: line-through;
+}
+
+.fa-trash {
+  color: rebeccapurple;
 }
