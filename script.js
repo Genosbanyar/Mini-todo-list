@@ -1,0 +1,20 @@
+const btn = document.getElementsByClassName("btn")[0];
+const inputTag = document.getElementsByClassName("input-text")[0];
+const content = document.getElementsByClassName("content")[0];
+const bodyTag = document.getElementsByTagName("body")[0];
+const container = document.getElementsByClassName("container")[0];
+let listCount = 1;
+btn.addEventListener("click", (event) => {
+  const inputValue = inputTag.value;
+  const parDiv = document.createElement("div");
+  parDiv.classList.add("parent-Div");
+  const spanTag = document.createElement("span");
+  spanTag.classList.add("span-tag");
+  const listNumToString = listCount.toString() + ". " + inputValue;
+  spanTag.append(listNumToString);
+  parDiv.append(spanTag);
+  content.append(parDiv);
+  container.append(content);
+  inputTag.value = "";
+  listCount += 1;
+});
