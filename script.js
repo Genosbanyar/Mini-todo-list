@@ -6,7 +6,7 @@ let listCount = 1;
 btn.addEventListener("click", (event) => {
   const inputValue = inputTag.value;
   if (inputTag.value === "") {
-    alert("Enter Something");
+    return;
   } else {
     const parDiv = document.createElement("div");
     parDiv.classList.add("parent-Div");
